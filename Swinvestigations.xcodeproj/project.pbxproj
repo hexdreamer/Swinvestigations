@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9146B2F1D1DE89E00D96EBC /* CaptureListOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */; };
+		B9CF96FF1D1A6C37005B9F64 /* ConstCharStarConstStarC.c in Sources */ = {isa = PBXBuildFile; fileRef = B9CF96FD1D1A6C37005B9F64 /* ConstCharStarConstStarC.c */; };
 		B9E6D0601D18AE16006A8497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D05F1D18AE16006A8497 /* AppDelegate.swift */; };
 		B9E6D0621D18AE16006A8497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D0611D18AE16006A8497 /* ViewController.swift */; };
 		B9E6D0651D18AE16006A8497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E6D0631D18AE16006A8497 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		B9E6D06A1D18AE16006A8497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E6D0681D18AE16006A8497 /* LaunchScreen.storyboard */; };
 		B9E6D0751D18AE16006A8497 /* SwinvestigationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D0741D18AE16006A8497 /* SwinvestigationsTests.swift */; };
 		B9E6D0801D18AE16006A8497 /* SwinvestigationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D07F1D18AE16006A8497 /* SwinvestigationsUITests.swift */; };
+		B9E6D0901D18AFD7006A8497 /* ConstCharStarConstStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */; };
+		B9E6D09B1D18B13D006A8497 /* ConstCharStarConstStar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D09A1D18B13D006A8497 /* ConstCharStarConstStar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureListOptionalTests.swift; sourceTree = "<group>"; };
+		B9CF96FD1D1A6C37005B9F64 /* ConstCharStarConstStarC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ConstCharStarConstStarC.c; sourceTree = "<group>"; };
+		B9CF96FE1D1A6C37005B9F64 /* ConstCharStarConstStarC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstCharStarConstStarC.h; sourceTree = "<group>"; };
 		B9E6D05C1D18AE16006A8497 /* Swinvestigations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swinvestigations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E6D05F1D18AE16006A8497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9E6D0611D18AE16006A8497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,10 @@
 		B9E6D07B1D18AE16006A8497 /* SwinvestigationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinvestigationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E6D07F1D18AE16006A8497 /* SwinvestigationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinvestigationsUITests.swift; sourceTree = "<group>"; };
 		B9E6D0811D18AE16006A8497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstCharStarConstStarTests.swift; sourceTree = "<group>"; };
+		B9E6D0951D18B08C006A8497 /* Swinvestigations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swinvestigations-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9E6D0991D18B13D006A8497 /* ConstCharStarConstStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstCharStarConstStar.h; sourceTree = "<group>"; };
+		B9E6D09A1D18B13D006A8497 /* ConstCharStarConstStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstCharStarConstStar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +114,11 @@
 				B9E6D0661D18AE16006A8497 /* Assets.xcassets */,
 				B9E6D0681D18AE16006A8497 /* LaunchScreen.storyboard */,
 				B9E6D06B1D18AE16006A8497 /* Info.plist */,
+				B9E6D0951D18B08C006A8497 /* Swinvestigations-Bridging-Header.h */,
+				B9CF96FE1D1A6C37005B9F64 /* ConstCharStarConstStarC.h */,
+				B9CF96FD1D1A6C37005B9F64 /* ConstCharStarConstStarC.c */,
+				B9E6D0991D18B13D006A8497 /* ConstCharStarConstStar.h */,
+				B9E6D09A1D18B13D006A8497 /* ConstCharStarConstStar.m */,
 			);
 			path = Swinvestigations;
 			sourceTree = "<group>";
@@ -111,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				B9E6D0741D18AE16006A8497 /* SwinvestigationsTests.swift */,
+				B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */,
+				B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */,
 				B9E6D0761D18AE16006A8497 /* Info.plist */,
 			);
 			path = SwinvestigationsTests;
@@ -195,12 +213,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S4K89S6LAE;
 						DevelopmentTeamName = "Kenny Leung";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B9E6D06F1D18AE16006A8497 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S4K89S6LAE;
 						DevelopmentTeamName = "Kenny Leung";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B9E6D05B1D18AE16006A8497;
 					};
@@ -266,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E6D0621D18AE16006A8497 /* ViewController.swift in Sources */,
+				B9CF96FF1D1A6C37005B9F64 /* ConstCharStarConstStarC.c in Sources */,
 				B9E6D0601D18AE16006A8497 /* AppDelegate.swift in Sources */,
+				B9E6D09B1D18B13D006A8497 /* ConstCharStarConstStar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E6D0751D18AE16006A8497 /* SwinvestigationsTests.swift in Sources */,
+				B9146B2F1D1DE89E00D96EBC /* CaptureListOptionalTests.swift in Sources */,
+				B9E6D0901D18AFD7006A8497 /* ConstCharStarConstStarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -414,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Swinvestigations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.Swinvestigations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swinvestigations/Swinvestigations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,10 +453,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Swinvestigations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.Swinvestigations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swinvestigations/Swinvestigations-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -438,10 +467,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwinvestigationsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.SwinvestigationsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swinvestigations.app/Swinvestigations";
 			};
@@ -451,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwinvestigationsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.SwinvestigationsTests";
@@ -503,6 +535,7 @@
 				B9E6D0861D18AE16006A8497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9E6D0871D18AE16006A8497 /* Build configuration list for PBXNativeTarget "SwinvestigationsTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +544,7 @@
 				B9E6D0891D18AE16006A8497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9E6D08A1D18AE16006A8497 /* Build configuration list for PBXNativeTarget "SwinvestigationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +553,7 @@
 				B9E6D08C1D18AE16006A8497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
