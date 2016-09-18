@@ -21,14 +21,14 @@ class CaptureListConditionalTests: XCTestCase {
     
     func testWeakSelfOldWay() {
         weak var me = self
-        DispatchQueue.global(attributes: .qosBackground).async {
+        DispatchQueue.global(qos: .background).async {
             guard let me = me else {return}
             me.doitOutOfBand("testWeakSelfOldWay")
         }
     }
     
     func testWeakSelf() {
-        DispatchQueue.global(attributes: .qosBackground).async { [weak self] in
+        DispatchQueue.global(qos: .background).async { [weak self] in
             // can't do 'guard let self = self else {return}'
             guard let me = self else {return}
             me.doitOutOfBand("testWeakSelf")
@@ -38,8 +38,8 @@ class CaptureListConditionalTests: XCTestCase {
     func testWeakSelfAndOthers() {
         let other = OtherClass()
 
-        DispatchQueue.global(attributes: .qosBackground).async { [weak self, weak other] in
-            guard let me = self, other = other else {return}
+        DispatchQueue.global(qos: .background).async { [weak self, weak other] in
+            guard let me = self, let other = other else {return}
             
             me.doitOutOfBand("testWeakSelfAndOthers")
             other.beautiful = true

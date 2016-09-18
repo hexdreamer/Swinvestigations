@@ -35,7 +35,7 @@ class ConstCharStarConstStarTests: XCTestCase {
     }
 
     func testCString() {
-        guard let cstring = "Get Smart".cString(using: String.defaultCStringEncoding()) else {
+        guard let cstring = "Get Smart".cString(using: String.defaultCStringEncoding) else {
             XCTFail()
             return
         }
@@ -44,7 +44,7 @@ class ConstCharStarConstStarTests: XCTestCase {
     }
 
     func testCStringFail() {
-        guard let cstring = "Bet Smart".cString(using: String.defaultCStringEncoding()) else {
+        guard let cstring = "Bet Smart".cString(using: String.defaultCStringEncoding) else {
             XCTFail()
             return
         }
@@ -54,7 +54,7 @@ class ConstCharStarConstStarTests: XCTestCase {
 
     func testCStringLossy() {
         // This one fails expectedly trying to convert the unicode string into a C String
-        guard let cstring = "Get Smart 😇".cString(using: String.defaultCStringEncoding()) else {
+        guard let cstring = "Get Smart 😇".cString(using: String.defaultCStringEncoding) else {
             return
         }
         print("Should never get here \(cstring)")
@@ -76,7 +76,7 @@ class ConstCharStarConstStarTests: XCTestCase {
     }
 
     func testCStringObjC() throws {
-        guard let cstring = "Get Smart".cString(using: String.defaultCStringEncoding()) else {
+        guard let cstring = "Get Smart".cString(using: String.defaultCStringEncoding) else {
             XCTFail()
             return
         }
@@ -86,7 +86,7 @@ class ConstCharStarConstStarTests: XCTestCase {
     func testCStringObjCFails() {
         var threw = false
         do {
-            guard let cstring = "Bet Smart".cString(using: String.defaultCStringEncoding()) else {
+            guard let cstring = "Bet Smart".cString(using: String.defaultCStringEncoding) else {
                 XCTFail()
                 return
             }
