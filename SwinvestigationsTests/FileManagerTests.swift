@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import MobileCoreServices
 
 class FileManagerTests: XCTestCase {
     
@@ -22,20 +23,35 @@ class FileManagerTests: XCTestCase {
 
     /*  This will fail with EXC_BAD_INSTRUCTION
     func testEnumeratorBogusDirectory() {
-        self._testEnumerator("/XXX")
+        self._testEnumerator("/XXX", expectError:false)
     }
     */
 
     /*  This will fail with EXC_BAD_INSTRUCTION
     func testEnumeratorSymlink() {
-        self._testEnumerator("/tmp")
+        self._testEnumerator("/tmp", expectError:false)
     }
     */
 
     func testEnumeratorExists() {
-        self._testEnumerator("/private/tmp")
+        let bundle = Bundle(for:type(of:self))
+        guard let sampleFiles = bundle.url(forResource:"SampleFiles", withExtension:nil) else {
+            XCTFail()
+            return
+        }
+        let imageCount = self._testEnumerator(url:sampleFiles, expectError:false)
+        XCTAssertEqual(imageCount, 2)
     }
 
+    /*
+    func _testEnumerator(path :String, expectError :Bool) {
+        guard let url = URL(string:path) else {
+            XCTFail()
+            return
+        }
+        self._testEnumerator(url:url, expectError:expectError)
+    }
+    */
 
     /*
      This crashes with
@@ -49,27 +65,50 @@ class FileManagerTests: XCTestCase {
      frame #5: 0x0000000104de3334 libswiftFoundation.dylib`Foundation.NSFastEnumerationIterator.next () -> Swift.Optional<Any> + 164
      
      This method always returns an enumerator despite the fact that the documentation says it's optional. If the path doesn't exist or is a symlink, it crashes when trying to use the enumerator. The Objective-C version of this code always works.
+
+     Filed as SR-2690
+     Problem is that the error handler callback is declared non-nullable, but ObjC tries to call it with nil NSError (presumably).
     */
-    func _testEnumerator(_ directory :String) {
-        guard let directory = URL(string:directory) else {XCTFail(); return}
+    func _testEnumerator(url :URL, expectError :Bool) -> Int {
         let fileEnumeratorQ = FileManager.default.enumerator(
-            at: directory,
+            at: url,
             includingPropertiesForKeys: [.isDirectoryKey, .isRegularFileKey, .nameKey, .typeIdentifierKey],
             options: [.skipsHiddenFiles],
             errorHandler:{ (url, error) -> Bool in
+                if !expectError {
+                    XCTFail("Should not have encountered errorHandler")
+                }
                 return true
             }
         )
 
         guard let fileEnumerator = fileEnumeratorQ else {
-            return
+            return 0
         }
 
-        NSLog("Enumerator: \(fileEnumerator)");
-
+        var imageCount = 0;
         for file in fileEnumerator {
-            NSLog("file: \(file)")
+            guard let fileURL = file as? URL else {
+                XCTFail()
+                return 0
+            }
+
+            do {
+                let resourceValues = try fileURL.resourceValues(forKeys: [.typeIdentifierKey])
+                guard let uti = resourceValues.typeIdentifier else {
+                    XCTFail()
+                    continue
+                }
+
+                if ( UTTypeConformsTo(uti as CFString, "public.image" as CFString) ) {
+                    NSLog("file: \(fileURL) \(uti)")
+                    imageCount += 1
+                }
+            } catch {
+                print("\(error)")
+            }
         }
+        return imageCount;
     }
 
 }

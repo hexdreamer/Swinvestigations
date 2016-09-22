@@ -22,6 +22,7 @@
 		B9E6D0801D18AE16006A8497 /* SwinvestigationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D07F1D18AE16006A8497 /* SwinvestigationsUITests.swift */; };
 		B9E6D0901D18AFD7006A8497 /* ConstCharStarConstStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */; };
 		B9E6D09B1D18B13D006A8497 /* ConstCharStarConstStar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D09A1D18B13D006A8497 /* ConstCharStarConstStar.m */; };
+		B9F39B041D9378F1008859C7 /* SampleFiles in Resources */ = {isa = PBXBuildFile; fileRef = B9F39B031D9378F1008859C7 /* SampleFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B9E6D0951D18B08C006A8497 /* Swinvestigations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swinvestigations-Bridging-Header.h"; sourceTree = "<group>"; };
 		B9E6D0991D18B13D006A8497 /* ConstCharStarConstStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstCharStarConstStar.h; sourceTree = "<group>"; };
 		B9E6D09A1D18B13D006A8497 /* ConstCharStarConstStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstCharStarConstStar.m; sourceTree = "<group>"; };
+		B9F39B031D9378F1008859C7 /* SampleFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		B9E6D0731D18AE16006A8497 /* SwinvestigationsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B9F39B031D9378F1008859C7 /* SampleFiles */,
 				B9B8E9F21D8EFF2B006A8BE0 /* SwinvestigationsTests-Bridging-Header.h */,
 				B9E6D0741D18AE16006A8497 /* SwinvestigationsTests.swift */,
 				B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F39B041D9378F1008859C7 /* SampleFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

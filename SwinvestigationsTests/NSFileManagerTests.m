@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface NSFileManagerTests : XCTestCase
 
@@ -26,40 +27,58 @@
 
 - (void)testEnumeratorBogusDirectory
 {
-    [self _testEnumerator:@"/XXX"];
+    [self _testEnumeratorAtPath:@"/XXX" expectError:YES];
 }
 
 - (void)testEnumeratorSymlink
 {
-    [self _testEnumerator:@"/tmp"];
+    [self _testEnumeratorAtPath:@"/tmp" expectError:YES];
 }
 
 - (void)testEnumeratorExists
 {
-    [self _testEnumerator:@"/private/tmp"];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSURL *url = [bundle URLForResource:@"SampleFiles" withExtension:nil];
+    int imageCount = [self _testEnumeratorAtURL:url expectError:NO];
+    XCTAssertEqual(imageCount, 2);
+}
+
+- (int)_testEnumeratorAtPath:(NSString *)path expectError:(BOOL)expectError
+{
+    NSURL *url = [NSURL URLWithString:[path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
+    XCTAssertNotNil(url);
+    return [self _testEnumeratorAtURL:url expectError:expectError];
 }
 
 /*
  This method will work no matter what url you give it. It will always return an enumerator even though the (Swift side of the) documentation says it's optional. If the path doesn't exist or is a symbolic link, it will enumerate over nothing. The Swift version will crash.
  */
-- (void)_testEnumerator:(NSString *)directory
+- (int)_testEnumeratorAtURL:(NSURL *)url expectError:(BOOL)expectError
 {
-    NSURL *url = [NSURL URLWithString:directory];
-    XCTAssertNotNil(url);
     NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager]
      enumeratorAtURL:url
      includingPropertiesForKeys:@[NSURLIsDirectoryKey, NSURLIsRegularFileKey, NSURLNameKey, NSURLTypeIdentifierKey]
      options:NSDirectoryEnumerationSkipsHiddenFiles
      errorHandler:^BOOL(NSURL * _Nonnull url, NSError * _Nonnull error) {
+         if ( !expectError ) {
+             XCTFail("Should not have encountered errorHandler");
+         }
          return YES;
      }];
     XCTAssertNotNil(enumerator);
 
-    NSLog(@"Enumerator: %@", enumerator);
-
+    int imageCount = 0;
     for ( NSURL *url in enumerator ) {
-        NSLog(@"%@", url);
+        NSString *uti;
+        NSError *error;
+
+        [url getResourceValue:&uti forKey:NSURLTypeIdentifierKey error:&error];
+        if ( UTTypeConformsTo((__bridge CFStringRef)uti, (__bridge CFStringRef)@"public.image") ) {
+            NSLog(@"%@ uti:%@", url, uti);
+            imageCount++;
+        }
     }
+    return imageCount;
 }
 
 @end
