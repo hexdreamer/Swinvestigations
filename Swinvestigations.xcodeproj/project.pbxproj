@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B9146B2F1D1DE89E00D96EBC /* CaptureListOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */; };
+		B9172E491E1EC6DD000BC434 /* DefaultValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9172E481E1EC6DD000BC434 /* DefaultValuesTests.swift */; };
 		B98072B61D2B07E80080CBC6 /* NotificationNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */; };
+		B9912F391DFCA94B008215A6 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9912F381DFCA94B008215A6 /* ArrayTests.swift */; };
 		B9B280CB1D1E1F3E0017A3EC /* Swift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */; };
 		B9B8E9F11D8EFF07006A8BE0 /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B8E9F01D8EFF07006A8BE0 /* FileManagerTests.swift */; };
 		B9B8E9F41D8EFF2C006A8BE0 /* NSFileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8E9F31D8EFF2C006A8BE0 /* NSFileManagerTests.m */; };
@@ -44,7 +46,9 @@
 
 /* Begin PBXFileReference section */
 		B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureListOptionalTests.swift; sourceTree = "<group>"; };
+		B9172E481E1EC6DD000BC434 /* DefaultValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValuesTests.swift; sourceTree = "<group>"; };
 		B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNameTests.swift; sourceTree = "<group>"; };
+		B9912F381DFCA94B008215A6 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3Tests.swift; sourceTree = "<group>"; };
 		B9B8E9F01D8EFF07006A8BE0 /* FileManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		B9B8E9F21D8EFF2B006A8BE0 /* SwinvestigationsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwinvestigationsTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -137,16 +141,18 @@
 		B9E6D0731D18AE16006A8497 /* SwinvestigationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9F39B031D9378F1008859C7 /* SampleFiles */,
+				B9912F381DFCA94B008215A6 /* ArrayTests.swift */,
+				B9172E481E1EC6DD000BC434 /* DefaultValuesTests.swift */,
+				B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */,
+				B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */,
+				B9B8E9F01D8EFF07006A8BE0 /* FileManagerTests.swift */,
+				B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */,
+				B9B8E9F31D8EFF2C006A8BE0 /* NSFileManagerTests.m */,
+				B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */,
 				B9B8E9F21D8EFF2B006A8BE0 /* SwinvestigationsTests-Bridging-Header.h */,
 				B9E6D0741D18AE16006A8497 /* SwinvestigationsTests.swift */,
-				B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */,
-				B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */,
-				B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */,
-				B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */,
+				B9F39B031D9378F1008859C7 /* SampleFiles */,
 				B9E6D0761D18AE16006A8497 /* Info.plist */,
-				B9B8E9F01D8EFF07006A8BE0 /* FileManagerTests.swift */,
-				B9B8E9F31D8EFF2C006A8BE0 /* NSFileManagerTests.m */,
 			);
 			path = SwinvestigationsTests;
 			sourceTree = "<group>";
@@ -320,8 +326,10 @@
 				B9146B2F1D1DE89E00D96EBC /* CaptureListOptionalTests.swift in Sources */,
 				B9E6D0901D18AFD7006A8497 /* ConstCharStarConstStarTests.swift in Sources */,
 				B98072B61D2B07E80080CBC6 /* NotificationNameTests.swift in Sources */,
+				B9912F391DFCA94B008215A6 /* ArrayTests.swift in Sources */,
 				B9B280CB1D1E1F3E0017A3EC /* Swift3Tests.swift in Sources */,
 				B9B8E9F11D8EFF07006A8BE0 /* FileManagerTests.swift in Sources */,
+				B9172E491E1EC6DD000BC434 /* DefaultValuesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

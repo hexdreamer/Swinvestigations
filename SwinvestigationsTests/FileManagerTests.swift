@@ -66,7 +66,7 @@ class FileManagerTests: XCTestCase {
      
      This method always returns an enumerator despite the fact that the documentation says it's optional. If the path doesn't exist or is a symlink, it crashes when trying to use the enumerator. The Objective-C version of this code always works.
 
-     Filed as SR-2690
+     Filed as https://bugs.swift.org/browse/SR-2690
      Problem is that the error handler callback is declared non-nullable, but ObjC tries to call it with nil NSError (presumably).
     */
     func _testEnumerator(url :URL, expectError :Bool) -> Int {
