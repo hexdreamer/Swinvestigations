@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		B9146B2F1D1DE89E00D96EBC /* CaptureListOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */; };
 		B9172E491E1EC6DD000BC434 /* DefaultValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9172E481E1EC6DD000BC434 /* DefaultValuesTests.swift */; };
+		B9296F9E20081C0C007B1E03 /* KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9296F9D20081C0C007B1E03 /* KeyPaths.swift */; };
+		B92AE2041FFD80B70040762A /* CollectionMutabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92AE2031FFD80B70040762A /* CollectionMutabilityTests.swift */; };
+		B92AE212200023040040762A /* OperatorPrecedence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92AE211200023040040762A /* OperatorPrecedence.swift */; };
+		B93B4BB2201ED51A006EF1B3 /* OptionalBooleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B4BB1201ED51A006EF1B3 /* OptionalBooleanTests.swift */; };
+		B93B4BB4201ED9D8006EF1B3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B4BB3201ED9D8006EF1B3 /* Errors.swift */; };
+		B94284DF1FF9CBB100059BE4 /* Rethrows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94284DE1FF9CBB100059BE4 /* Rethrows.swift */; };
+		B9518AE4200915150011F072 /* FunctionOverload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9518AE3200915150011F072 /* FunctionOverload.swift */; };
 		B98072B61D2B07E80080CBC6 /* NotificationNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */; };
 		B9912F391DFCA94B008215A6 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9912F381DFCA94B008215A6 /* ArrayTests.swift */; };
 		B9B280CB1D1E1F3E0017A3EC /* Swift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */; };
@@ -47,6 +54,13 @@
 /* Begin PBXFileReference section */
 		B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureListOptionalTests.swift; sourceTree = "<group>"; };
 		B9172E481E1EC6DD000BC434 /* DefaultValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValuesTests.swift; sourceTree = "<group>"; };
+		B9296F9D20081C0C007B1E03 /* KeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPaths.swift; sourceTree = "<group>"; };
+		B92AE2031FFD80B70040762A /* CollectionMutabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMutabilityTests.swift; sourceTree = "<group>"; };
+		B92AE211200023040040762A /* OperatorPrecedence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorPrecedence.swift; sourceTree = "<group>"; };
+		B93B4BB1201ED51A006EF1B3 /* OptionalBooleanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBooleanTests.swift; sourceTree = "<group>"; };
+		B93B4BB3201ED9D8006EF1B3 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B94284DE1FF9CBB100059BE4 /* Rethrows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rethrows.swift; sourceTree = "<group>"; };
+		B9518AE3200915150011F072 /* FunctionOverload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionOverload.swift; sourceTree = "<group>"; };
 		B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNameTests.swift; sourceTree = "<group>"; };
 		B9912F381DFCA94B008215A6 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3Tests.swift; sourceTree = "<group>"; };
@@ -134,6 +148,11 @@
 				B9CF96FD1D1A6C37005B9F64 /* ConstCharStarConstStarC.c */,
 				B9E6D0991D18B13D006A8497 /* ConstCharStarConstStar.h */,
 				B9E6D09A1D18B13D006A8497 /* ConstCharStarConstStar.m */,
+				B94284DE1FF9CBB100059BE4 /* Rethrows.swift */,
+				B92AE211200023040040762A /* OperatorPrecedence.swift */,
+				B9296F9D20081C0C007B1E03 /* KeyPaths.swift */,
+				B9518AE3200915150011F072 /* FunctionOverload.swift */,
+				B93B4BB3201ED9D8006EF1B3 /* Errors.swift */,
 			);
 			path = Swinvestigations;
 			sourceTree = "<group>";
@@ -142,12 +161,14 @@
 			isa = PBXGroup;
 			children = (
 				B9912F381DFCA94B008215A6 /* ArrayTests.swift */,
+				B92AE2031FFD80B70040762A /* CollectionMutabilityTests.swift */,
 				B9172E481E1EC6DD000BC434 /* DefaultValuesTests.swift */,
 				B9146B2E1D1DE89E00D96EBC /* CaptureListOptionalTests.swift */,
 				B9E6D08F1D18AFD7006A8497 /* ConstCharStarConstStarTests.swift */,
 				B9B8E9F01D8EFF07006A8BE0 /* FileManagerTests.swift */,
 				B98072B51D2B07E80080CBC6 /* NotificationNameTests.swift */,
 				B9B8E9F31D8EFF2C006A8BE0 /* NSFileManagerTests.m */,
+				B93B4BB1201ED51A006EF1B3 /* OptionalBooleanTests.swift */,
 				B9B280CA1D1E1F3E0017A3EC /* Swift3Tests.swift */,
 				B9B8E9F21D8EFF2B006A8BE0 /* SwinvestigationsTests-Bridging-Header.h */,
 				B9E6D0741D18AE16006A8497 /* SwinvestigationsTests.swift */,
@@ -311,8 +332,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E6D0621D18AE16006A8497 /* ViewController.swift in Sources */,
+				B9296F9E20081C0C007B1E03 /* KeyPaths.swift in Sources */,
 				B9CF96FF1D1A6C37005B9F64 /* ConstCharStarConstStarC.c in Sources */,
+				B9518AE4200915150011F072 /* FunctionOverload.swift in Sources */,
 				B9E6D0601D18AE16006A8497 /* AppDelegate.swift in Sources */,
+				B92AE212200023040040762A /* OperatorPrecedence.swift in Sources */,
+				B94284DF1FF9CBB100059BE4 /* Rethrows.swift in Sources */,
+				B93B4BB4201ED9D8006EF1B3 /* Errors.swift in Sources */,
 				B9E6D09B1D18B13D006A8497 /* ConstCharStarConstStar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,8 +354,10 @@
 				B98072B61D2B07E80080CBC6 /* NotificationNameTests.swift in Sources */,
 				B9912F391DFCA94B008215A6 /* ArrayTests.swift in Sources */,
 				B9B280CB1D1E1F3E0017A3EC /* Swift3Tests.swift in Sources */,
+				B93B4BB2201ED51A006EF1B3 /* OptionalBooleanTests.swift in Sources */,
 				B9B8E9F11D8EFF07006A8BE0 /* FileManagerTests.swift in Sources */,
 				B9172E491E1EC6DD000BC434 /* DefaultValuesTests.swift in Sources */,
+				B92AE2041FFD80B70040762A /* CollectionMutabilityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swinvestigations/Swinvestigations-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -507,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.Swinvestigations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swinvestigations/Swinvestigations-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -523,7 +551,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwinvestigationsTests/SwinvestigationsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swinvestigations.app/Swinvestigations";
 			};
@@ -539,7 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.SwinvestigationsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwinvestigationsTests/SwinvestigationsTests-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swinvestigations.app/Swinvestigations";
 			};
@@ -552,7 +580,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.SwinvestigationsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Swinvestigations;
 			};
@@ -565,7 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pepperdog-enterprises.SwinvestigationsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Swinvestigations;
 			};
